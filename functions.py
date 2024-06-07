@@ -7,7 +7,7 @@ def write_thought(thought, file_path=FILEPATH):
 
 def read_thought(file_path=FILEPATH):
     try:
-        with open(file_path, 'r', encoding='utf-8') as file:
+        with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:
             thought=file.read()
     except FileNotFoundError:
         thought=""
