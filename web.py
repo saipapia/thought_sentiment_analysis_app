@@ -1,6 +1,17 @@
 import streamlit as st
 import functions
 
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #D768F7; /* Change this to your desired background color */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.title("Sentiment Analysis App")
 st.subheader("Thought.....")
 st.write("How you feel today?")
